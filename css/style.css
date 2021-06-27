@@ -1,0 +1,91 @@
+
+@font-face {
+	font-family: Modern;
+	src: url(../font/BunchBlossomsPersonalUse.ttf);
+}
+
+
+body { 
+	/* background-image: url(../img/reilly-durfy--MWoUTlQcHA-unsplash.jpg); */
+	background-color: rgb(247, 244, 233);
+	background-size: 95%;
+	background-clip: content-box;
+	margin: 5mm;
+}
+
+
+#background {
+	font-size: 1em;
+	/*background-image: url(../img/reilly-durfy--MWoUTlQcHA-unsplash.jpg); */
+	background-size: auto; 
+}
+
+#header ul {
+	margin-top: 5px;
+	margin-left: 20px;;
+}
+
+#header li {
+    display: inline;
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size: 1.5em;
+	color:rgb(96,64,32);
+	padding: 10px;
+}
+
+#logo {
+	color: rgb(204,153,102);
+	font-family: Modern;
+	font-size: 8em;
+	margin: 55px;
+	text-align: center; 
+}
+
+#heart_image {
+	/*margin-top: 100px; */
+	justify-self: center;
+	/*margin-left: 60px; */
+	align-items: center;
+	padding: 30px;
+}
+
+#top_banner {
+	background-color: rgb(96,64,32);
+	height: 550px;
+	width: 1700px;
+	margin-left: 200px;
+}
+
+/* Messed up numbers.. getting inherited from #top_banner?*/
+#caramel_box {
+	height: 450px;
+	width: 500px;
+	background-color: rgb(204,153,102);
+	margin-left: 1070px;
+	margin-top: -520px;
+	font-family: Modern;
+	color: white;
+	padding: 20px;
+}
+
+#caramel_box h2 {
+	font-size: 26px;
+	text-align: center;
+	margin-top: 40px;
+	padding: 30px;
+}
+
+
+#contact_info {
+	font-size: 4em;
+	color:rgb(96,64,32);
+	align-content: center;
+	margin-left: 200px;
+	margin-top: 40px;
+	/*display: block; /*dont know what this is yet */
+}
+
+#header li:hover {
+	background-color: rgb(96,64,32);
+	color: white;
+}
