@@ -16,24 +16,20 @@ body {
 #wrapper {
 	font-size: 2em;
 	background-size: auto; 
-	border: 5px solid red;
+	/*border: 5px solid red;*/
 }
 
 #background_image {
+	padding: 2%;
 	margin: 5%;
-	background-image: url(../img/botanical.jpg);
+	background-image: url(../img/opaque_leaf.png);
 	background-position: center;
-	background-size: cover;
-	border: 8px solid purple;
+	background-size: cover; 
+	/*border: 8px solid purple;*/
 	/*opacity: 0.5;*/
 }
 
-#transparent_frame {
-	height: 500px;
-	width: 500px;
-	background-color: white;
-	opacity: 0.5;
-}
+
 /*
 #transparent_box {
 	display: inline;
@@ -57,7 +53,7 @@ body {
 #header li {
     display: inline;
 	font-family: Arial, Helvetica, sans-serif;	
-	font-size: 2em;
+	font-size: 3em;
 	color:rgb(96,64,32);
 	padding: 10px;
 }
@@ -89,14 +85,15 @@ body {
 	margin: 2%;
 }
 
-#section_A {
-	position: absolute;
+#section_a {
+	position: absolute; /* Relative probably the answer to expanding vertically but really fucks with it*/
 	top: 6%;
 	left: 45%;
 	width: 50%;
-	height: 85%;
+	height: 93%; /* NEED TO FIT CONTENT IN ***/
 	background-color: rgb(153, 138, 113);
-	border: 5px solid greenyellow;
+	/*min-height: fit-content;*/
+	/*border: 5px solid greenyellow;*/
 }
 
 #inspo_1_header {
@@ -113,34 +110,44 @@ body {
 	padding: 2% 10%;
 }
 
+/************* SECOND BLOCK *******************/
+#contact_info {
+	font-size: 5em;
+	color: rgb(96,64,32);
+	text-align: center;
+	/*border: 5px solid red;*/
+}
+
 /***************** THIRD BLOCK *****************/
 
 #third_block_frame {
-	width: 90%;
+	width: 100%;
+	/*border: 5px solid red;*/
 }
 
 .product_img {
 	padding: 2%;
 	background-color: white;
-	margin-left: 1.5%;
-	width: 15%;
+	margin-left: 1%;
+	width: 16%;
 	height: auto;
+	/*border: 5px solid red;*/
 }
 
 .product_img:first-of-type{
-	margin-left: 4%;
+	margin-left: 3%;
 }
 
 .product_img:hover {
 	/*background-color: rgb(153, 138, 113);*/
-	outline: 5px solid rgb(153, 138, 113);
+	outline: 25px solid rgb(153, 138, 113);
 }
 
-
-#product_3 { /*ANOMALY */
-	height: 700px;
+/*
+#product_3 { /*ANOMALY 
+	height: 650px;
 }
-
+*/
 
 .block_frame {
 	width: 80%;
