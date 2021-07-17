@@ -1,91 +1,174 @@
 
 @font-face {
 	font-family: Modern;
-	src: url(../font/BunchBlossomsPersonalUse.ttf);
+	src: url(../font/BunchBlossomsPersonalUse.ttf); /*get different font using @font-face from google*/
 }
 
 
 body { 
-	/* background-image: url(../img/reilly-durfy--MWoUTlQcHA-unsplash.jpg); */
 	background-color: rgb(247, 244, 233);
 	background-size: 95%;
 	background-clip: content-box;
-	margin: 5mm;
+	margin: 5px;
+	/*background-image: url(../img/beach_leaf.jpg);*/
 }
 
-
-#background {
-	font-size: 1em;
-	/*background-image: url(../img/reilly-durfy--MWoUTlQcHA-unsplash.jpg); */
+#wrapper {
+	font-size: 2em;
 	background-size: auto; 
+	border: 5px solid red;
 }
 
+#background_image {
+	margin: 5%;
+	background-image: url(../img/botanical.jpg);
+	background-position: center;
+	background-size: cover;
+	border: 8px solid purple;
+	/*opacity: 0.5;*/
+}
+
+#transparent_frame {
+	height: 500px;
+	width: 500px;
+	background-color: white;
+	opacity: 0.5;
+}
+/*
+#transparent_box {
+	display: inline;
+}*/
+
+/*
+#leaf {
+	z-index: -1;
+	float: left;
+	clear: none;
+}*/
+
+/******************* HEADER/NAV *******************/
 #header ul {
-	margin-top: 5px;
-	margin-left: 20px;;
+	margin-left: 20px;
+	padding-top: 1.5%;
+	padding-left: 2%;
+	/*border: 5px solid red;*/
 }
 
 #header li {
     display: inline;
 	font-family: Arial, Helvetica, sans-serif;	
-	font-size: 1.5em;
+	font-size: 2em;
 	color:rgb(96,64,32);
 	padding: 10px;
 }
 
 #logo {
 	color: rgb(204,153,102);
-	font-family: Modern;
+	font-family: Modern, serif; 
 	font-size: 8em;
 	margin: 55px;
 	text-align: center; 
-}
-
-#heart_image {
-	/*margin-top: 100px; */
-	justify-self: center;
-	/*margin-left: 60px; */
-	align-items: center;
-	padding: 30px;
-}
-
-#top_banner {
-	background-color: rgb(96,64,32);
-	height: 550px;
-	width: 1700px;
-	margin-left: 200px;
-}
-
-/* Messed up numbers.. getting inherited from #top_banner?*/
-#caramel_box {
-	height: 450px;
-	width: 500px;
-	background-color: rgb(204,153,102);
-	margin-left: 1070px;
-	margin-top: -520px;
-	font-family: Modern;
-	color: white;
-	padding: 20px;
-}
-
-#caramel_box h2 {
-	font-size: 26px;
-	text-align: center;
-	margin-top: 40px;
-	padding: 30px;
-}
-
-
-#contact_info {
-	font-size: 4em;
-	color:rgb(96,64,32);
-	align-content: center;
-	margin-left: 200px;
-	margin-top: 40px;
-	/*display: block; /*dont know what this is yet */
+	margin-top: 2%;
 }
 
 #header li:hover {
 	background-color: rgb(96,64,32);
 	color: white;
+}
+
+/***************** FIRST BLOCK *********************/
+
+#first_block_frame {
+	position: relative; /* Positioning as ancestor */
+}
+
+#heart_image {
+	display: block;
+	width: 40%;
+	height: auto;
+	margin: 2%;
+}
+
+#section_A {
+	position: absolute;
+	top: 6%;
+	left: 45%;
+	width: 50%;
+	height: 85%;
+	background-color: rgb(153, 138, 113);
+	border: 5px solid greenyellow;
+}
+
+#inspo_1_header {
+	font-size: 3em;
+	color: white;
+	padding:5% 10% 0% 5%;
+	text-align: center;
+}
+
+#inspo_1 {
+	/*display: inline;*/
+	color: white;
+	font-size: 2em;
+	padding: 2% 10%;
+}
+
+/***************** THIRD BLOCK *****************/
+
+#third_block_frame {
+	width: 90%;
+}
+
+.product_img {
+	padding: 2%;
+	background-color: white;
+	margin-left: 1.5%;
+	width: 15%;
+	height: auto;
+}
+
+.product_img:first-of-type{
+	margin-left: 4%;
+}
+
+.product_img:hover {
+	/*background-color: rgb(153, 138, 113);*/
+	outline: 5px solid rgb(153, 138, 113);
+}
+
+
+#product_3 { /*ANOMALY */
+	height: 700px;
+}
+
+
+.block_frame {
+	width: 80%;
+	margin: 5% auto;
+	min-width: 1400px;
+}
+
+/*
+.wireframe {
+	border-width: 5px !important;
+	border-color: rgb(240, 6, 162) !important;
+	border-style: solid !important;
+}
+*/
+
+
+/******** MOBILE FORMAT ***********/
+@media (max-width:600px) {
+
+	#heart_image {
+		height: 180px;
+		width: auto;
+	}
+
+}
+
+/********* DESKTOP FORMAT ************/
+@media (min-width: 601px) {
+
+
 }
